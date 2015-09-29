@@ -12,15 +12,10 @@ if len(sys.argv) == 1:
 else:
     remoteServer = sys.argv[1]
 
-
 remoteServerIP  = socket.gethostbyname(remoteServer)
 
 # Check what time the scan started
 t1 = datetime.now()
-
-# Using the range function to specify ports (here it will scans all ports between 1 and 1024)
-
-# We also put in some error handling for catching errors
 
 try:
     ports_to_scan = [22,3306,5900]
